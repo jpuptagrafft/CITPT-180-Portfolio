@@ -1,0 +1,205 @@
+body{
+    background-color:#4d28d1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#background{
+    background-color: #e5e9d0;
+    padding-bottom: auto;
+    min-height: 88.75vh;
+    border: 8px solid #2858d1;
+    border-top: none;
+}
+
+/*Navigation*/
+nav {
+    background-color: #4d28d1;
+    border-bottom: 8px solid #2858d1;
+}
+#headNav{
+    display: inline;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 5vh;
+}
+#logo{
+    height: 7vh;
+    width: auto;
+    min-width: 10em;
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+#logo:hover{
+    background-color: #2858d1;
+}
+#logo:hover {
+    background-color: #2858d1;
+}
+#menuItem{
+    padding: 1.75em 0em 1.75em 0em;
+    margin-right: 3%;
+    background-color:#4d28d1;
+    color: white;
+}
+#menuItem:hover{
+    background-color: #2858d1;
+}
+#menuFolder{
+    font-size: 125%;
+    color: white;
+}
+#firstMenuItem{
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+    background-color:#4d28d1;
+}
+#firstMenuItem:hover{
+    background-color: #2858d1;
+}
+.js-dropdown-active{
+    color: black;
+}
+@media screen and (max-width: 39.9375em) {
+    #menuFolder::after{
+        right: -.25rem;
+    }
+    #firstMenuItem{
+        justify-content: center;
+    }
+}
+
+/*Features*/
+#feature{
+    background-color: rgb(0, 88, 160);
+    color: white;
+    background-clip: content-box;
+    margin-top: 1vh;
+}
+#featureClass{
+    background-color: rgb(0, 88, 160);
+    min-height: 40vh;
+}
+#featureClass img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 41vh;
+}
+#featureTool{
+    background-color: rgb(0, 88, 160);
+    min-height: 60vh;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+#featureTool img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; 
+    height: 60vh;
+}
+#feature img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; /*Relative, ajust to fit*/
+    height: auto;
+}
+#aside{
+    background-color: grey;
+    color: white;
+    min-height: 40vh;
+    background-clip: content-box;
+    margin-top: 1vh;
+}
+#body{
+    background-color: #c1c16b;
+    background-clip: content-box;
+    margin-top: 1vh;
+    min-height: 30vh;
+}
+@media screen and (max-width: 39.9375em) {
+    #feature img{
+        width: 100%; /*Relative, ajust to fit*/
+    }
+    #featureTool img{
+        width: 100%;
+        height: auto;
+    }
+    #featureClass{
+        min-height: 0px;
+    }
+    #featureClass img{
+        width: 100%;
+        height: auto;
+    }
+    #featureTool{
+        min-height: 0px;
+    }
+    #aside{
+        min-height: 0px;
+    }
+    #body{
+        min-height: 0px;
+    }
+    #logo{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Bodies, Headers, ect.*/
+#toolBody{
+    background-color: #c1c16b;
+    background-clip: content-box;
+    margin-top: 1vh;
+}
+#welcome h1{
+    text-align: center;
+}
+#welcome h4{
+    text-align: center;
+}
+#welcome h5{
+    text-align: center;
+}
+#aside a{
+    text-decoration: underline;
+}
+
+#welcome a{;
+    text-decoration: underline;
+}
+#welcome a:hover{
+    color: rgb(0, 88, 160);
+}
+main a {
+    color: rgb(182, 0, 0);
+    text-decoration: underline;
+}
+main a:hover {
+    color: rgb(0, 139, 205);
+}
+h6{
+    margin-top: .5rem;
+}
+#toolMain{
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+
+/*footer*/
+#footer{
+    color: white;
+    background-color: #2858d1;
+    background-clip: content-box;
+    padding: 1em 0px 0px  0px;
+    text-align: center;
+}
+
+
