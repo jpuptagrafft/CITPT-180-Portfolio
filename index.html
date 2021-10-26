@@ -9,29 +9,47 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
-    <div class="grid-container" id="headNav"><!--Navigation-->
-      <nav>
-        <div class="large-12 cell" id="Nav">
-          <ul class="vertical medium-horizontal menu align-left" data-responsive-menu="accordion medium-dropdown">
-            <li id="firstMenuItem" class="firstMenuItem">
-              <a href="#"><img src="assets/img/Big_Logo.png" id="logo"></a>
+  <body onload="update()" onresize= "update()">
+    <nav class="grid-container" id="headNav"><!--Navigation-->
+        <div class="grid-x grid-padding-x" id="bottomBorder">
+          <div class="small-12 large-3 cell flex-container align-justify" id="logoAndHam">
+              <div class="large-2 medium-12 small-4 medium-centered large-uncollapse cell" id="NavLogo">
+                <a href="#"><img src="assets/img/Big_Logo.png" id="logo"></a>
+              </div>
+              <div class="small-4 show-for-small-only float-right" id="hamNav" onrelease="hamSwitch()">
+                <a id="hamMenu">&#9776;</a>
+              </div>
+          </div>
+          <div class="large-4 medium-collapse medium-centered large-uncollapse cell" id="Nav">
+          <ul class="vertical medium-horizontal menu align-left" id="menuItems">
+              <li id="menuItem">
+                <a href="#" id="menuFolder">Bio</a>
+              </li>
+              <li id="menuItem">
+                <a href="#" id="menuFolder">Projects</a>
+              </li>
+              <li id="menuItem">
+                <a href="#" id="menuFolder">Resume</a>
+              </li>
+          </ul>
+        </div>
+        <div class="large-auto small-centered medium-centered large-uncentered cell" id="Nav">
+          <ul class="medium-horizontal menu align-right" id="icons">
+            <li class="firstMenuItem" id="icon">
+              <a href="mailto:jpuptagrafft@lcmail.lcsc.edu"><img src="assets/img/e-mail.png"></a>
             </li>
-            <li id="menuItem">
-              <a href="#" id="menuFolder">Bio</a>
+            <li class="menuItem" id="icon">
+              <a href="https://www.linkedin.com/in/james-uptagrafft-489079182/"><img src="assets/img/LinkedIn-Logos/LI-In-Bug.png" id="linkedin"></a>
             </li>
-            <li id="menuItem">
-              <a href="#" id="menuFolder">Projects</a>
-            </li>
-            <li id="menuItem">
-              <a href="#" id="menuFolder">Resume</a>
+            <li class="menuItem" id="icon">
+              <a href="https://github.com/jpuptagrafft" id="lastIcon"><img src="assets/img/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png"></a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div><!--Navigation End-->
-    <div class="grid-container" id="background">
-      <div class="grid-container">
+      </div>
+    </nav><!--Navigation End-->
+    <main class="grid-container" id="background">
+      <section class="grid-container" id="titleSection">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell" id="welcome">
               <h1><b>Welcome</b></h1>
@@ -39,24 +57,25 @@
               <h5>...and yes, I am frankensteining the Isoptera page I made... shush...</h5>
             </div>
         </div>
-      </div>
-      <div class="grid-container">
+      </section>
+      <section class="grid-container" id="menuSection">
         <div class="grid-x grid-padding-x">
-            <main class="large-12 cell" id= "body">
+            <div class="large-12 cell" id= "body">
               <h4>Fall 2020 Classes</h4>
-            </main>
-            <main class="large-12 cell" id= "body">
+            </div>
+            <div class="large-12 cell" id= "body">
               <h4>Featured Projects</h4>
-            </main>
+            </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
       <footer id="footer">
-        <h6>Created by James Uptagrafft, Fall 2020</h6>
+        <h6>Created by James Uptagrafft, Fall 2021</h6>
       </footer>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/functions.js">update();</script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 body{
     background-color:#4d28d1;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 #background{
     background-color: #e5e9d0;
@@ -11,9 +12,8 @@ body{
 }
 
 /*Navigation*/
-nav {
-    background-color: #4d28d1;
-    border-bottom: 8px solid #2858d1;
+#Nav{
+    padding-right: 0px;
 }
 #headNav{
     display: inline;
@@ -21,20 +21,25 @@ nav {
     padding-right: 0px;
     height: 5vh;
 }
+#logoAndHam{
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+}
+#logoAndHam:hover{
+    background-color: #2858d1;
+}
 #logo{
     height: 7vh;
-    width: auto;
+    width: 292px;
     min-width: 10em;
     float: left;
     display: flex;
     align-items: center;
-
 }
-#logo:hover{
-    background-color: #2858d1;
-}
-#logo:hover {
-    background-color: #2858d1;
+#linkedin{
+    height: 64px;
+    width: 75px;
 }
 #menuItem{
     padding: 1.75em 0em 1.75em 0em;
@@ -42,7 +47,14 @@ nav {
     background-color:#4d28d1;
     color: white;
 }
+#icon{
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
 #menuItem:hover{
+    background-color: #2858d1;
+}
+#icon:hover{
     background-color: #2858d1;
 }
 #menuFolder{
@@ -61,12 +73,103 @@ nav {
 .js-dropdown-active{
     color: black;
 }
+#bottomBorder{
+    border-bottom: 8px solid #2858d1;
+}
+#lastIcon{
+    padding-right: 2em;
+}
+@media screen and (min-width: 65em){
+    #logoAndHam{
+        width: 292px;
+    }
+}
 @media screen and (max-width: 39.9375em) {
     #menuFolder::after{
         right: -.25rem;
     }
     #firstMenuItem{
         justify-content: center;
+    }
+    #icons{
+        display: block;
+        text-align: center;
+    }
+    #icon{
+        display:inline-block;
+    }
+    #logoAndHam{
+        text-align: center;
+        width: default;
+    }
+    #logo{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #NavLogo{
+        width: auto;
+        padding: .5em 0 .5em 0;
+    }
+    #NavLogo:hover{
+        background-color: #2858d1;
+    }
+    #hamNav{
+        float: right;
+    }
+    #lastIcon{
+        padding-right: 1rem;
+    }
+    #hamMenu{
+        color: white;
+        margin-bottom: 0;
+        padding-top: 23px;
+        padding-bottom: 22px;
+        padding-left: 38px;
+        padding-right: 38px;
+        font-size: 200%;
+		-webkit-user-select: none;
+		-ms-user-select: none; 
+		user-select: none;
+    }
+    #hamMenu:hover{
+        border: #2858d1;
+    }
+    #logoAndHam:hover{
+        background-color: #4d28d1;
+    }
+
+}
+@media screen and (max-width: 64em) and (min-width: 40em){
+    #icons{
+        display: block;
+        text-align: center;
+    }
+    #icon{
+        display:inline-block;
+    }
+    #logoAndHam{
+        padding: .5em 0em .5em .5em;
+        text-align: center;
+        width: 100%;
+    }
+    #logo{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #menuItems{
+        display: block;
+        text-align: center;
+        padding-left: .5em;
+    }
+    #menuItem{
+        display: inline-block;
+    }
+    #lastIcon{
+        padding-right: 1rem;
     }
 }
 
@@ -144,12 +247,6 @@ nav {
     }
     #body{
         min-height: 0px;
-    }
-    #logo{
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
