@@ -82,6 +82,9 @@ body{
     #logoAndHam{
         width: 292px;
     }
+	#menuItem{
+		margin-right: 3%;
+	}
 }
 @media screen and (max-width: 39.9375em) {
     #menuFolder::after{
