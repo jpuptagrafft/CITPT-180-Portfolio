@@ -112,13 +112,15 @@ body{
     }
     #NavLogo{
         width: auto;
+		max-width: 75%;
         padding: .5em 0 .5em 0;
     }
     #NavLogo:hover{
         background-color: #2858d1;
     }
     #hamNav{
-        float: right;
+		width: auto;
+		max-width: 25%;
     }
     #lastIcon{
         padding-right: 1rem;
@@ -127,7 +129,7 @@ body{
         color: white;
         margin-bottom: 0;
         padding-top: 23px;
-        padding-bottom: 22px;
+        padding-bottom: 1.05rem;
         padding-left: 38px;
         padding-right: 38px;
         font-size: 200%;
