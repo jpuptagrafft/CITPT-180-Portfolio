@@ -74,7 +74,7 @@ body{
     background-color: #2858d1;
 }
 .js-dropdown-active{
-    color: black;
+    color: white;
 }
 #bottomBorder{
     border-bottom: 8px solid #2858d1;
@@ -133,7 +133,7 @@ body{
         color: white;
         margin-bottom: 0;
         padding-top: 1.5rem;
-		padding-bottom: 2.1vh;
+		padding-bottom: 19%;
 		padding-left: 2.4rem;
 		padding-right: 3rem;
         font-size: 200%;
