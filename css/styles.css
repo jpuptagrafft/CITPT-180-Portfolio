@@ -232,6 +232,26 @@ body{
     margin-top: 1vh;
     min-height: 30vh;
 }
+#lastBody{
+    background-color: #c1c16b;
+    background-clip: content-box;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    min-height: 30vh;
+}
+#Motivate{
+    float: left;
+    height: 75%;
+    padding: 1vh;
+    max-width: 28vh;
+    max-height: 46vh;
+}
+#Cast{
+    float: left;
+    padding: 1vh;
+    height: 50%;
+    max-height: 25vh;
+}
 @media screen and (max-width: 39.9375em) {
     #feature img{
         width: 100%; /*Relative, ajust to fit*/
@@ -255,6 +275,15 @@ body{
     }
     #body{
         min-height: 0px;
+    }
+    #lastBody{
+        min-height: 0px;
+    }
+    #Motivate{
+        display: none;
+    }
+    #Cast{
+        display: none;
     }
 }
 
