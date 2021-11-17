@@ -246,6 +246,13 @@ body{
     max-width: 28vh;
     max-height: 46vh;
 }
+#Engine{
+    float: left;
+    height: 75%;
+    padding: 1vh;
+    max-width: 40vh;
+    height: auto;
+}
 #Cast{
     float: left;
     padding: 1vh;
@@ -278,6 +285,9 @@ body{
     }
     #lastBody{
         min-height: 0px;
+    }
+    #Engine{
+        display: none;
     }
     #Motivate{
         display: none;

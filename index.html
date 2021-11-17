@@ -74,7 +74,11 @@
       </section>
     </main>
       <footer id="footer">
-        <h6>Created by James Uptagrafft, Fall 2021</h6>
+        <h6 id="foot"></h6>
+        <script>
+          var year = new Date();
+          document.getElementById("foot").innerHTML = "Created by James Uptagrafft, " + year.getFullYear();
+        </script>
       </footer>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
