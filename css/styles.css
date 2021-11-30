@@ -232,7 +232,24 @@ body{
     margin-top: 1vh;
     min-height: 30vh;
 }
+#indexBody{
+    display: flex;
+    align-items: center;
+    background-color: #c1c16b;
+    background-clip: content-box;
+    margin-top: 1vh;
+    min-height: 30vh;
+}
 #lastBody{
+    background-color: #c1c16b;
+    background-clip: content-box;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    min-height: 30vh;
+}
+#lastIndexBody{
+    display: flex;
+    align-items: center;
     background-color: #c1c16b;
     background-clip: content-box;
     margin-top: 1vh;
@@ -283,7 +300,13 @@ body{
     #body{
         min-height: 0px;
     }
+    #indexBody{
+        min-height: 0px;
+    }
     #lastBody{
+        min-height: 0px;
+    }
+    #lastIndexBody{
         min-height: 0px;
     }
     #Engine{
@@ -336,7 +359,35 @@ h6{
     margin-left: 2.5em;
     margin-right: 2.5em;
 }
-
+#bioPic{
+    float: left;
+    height: 350px;
+    width: 350px;
+    margin: 2vh;
+}
+#bioMenuPic{
+	height: 25vh;
+	width: auto;
+	min-width: 300px;
+	margin: 1vh;
+}
+#projectImg{
+	height: 20vh;
+	width: auto;
+	min-width: 300px;
+	margin: 1vh;
+}
+p{
+    margin: 1em;
+}
+#firstP{
+    margin-top: 1vh;
+}
+@media screen and (max-width: 39.9375em) {
+    #bioPic{
+        float: none;
+    }
+}
 /*footer*/
 #footer{
     color: white;
