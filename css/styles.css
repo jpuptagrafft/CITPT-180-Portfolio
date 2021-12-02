@@ -361,9 +361,9 @@ h6{
 }
 #bioPic{
     float: left;
-    height: 350px;
+    height: auto;
     width: 350px;
-    margin: 2vh;
+    margin: 1rem;
 }
 #bioMenuPic{
 	height: 25vh;
@@ -386,6 +386,7 @@ p{
 @media screen and (max-width: 39.9375em) {
     #bioPic{
         float: none;
+		max-width: 73rem;
     }
 	#bioMenuPic{
 		display: none;
