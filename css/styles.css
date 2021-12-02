@@ -387,6 +387,12 @@ p{
     #bioPic{
         float: none;
     }
+	#bioMenuPic{
+		display: none;
+	}
+	#projectImg{
+		display: none;
+	}
 }
 /*footer*/
 #footer{
