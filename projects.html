@@ -53,7 +53,7 @@
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell" id="welcome">
               <h1><b>Projects</b></h1>
-              <h4>Take a look at some of the Projects I've worked on.</h4>
+              <h4>Take a look at some of the Projects I've worked on during my academic career.</h4>
             </div>
         </div>
       </section>
@@ -62,22 +62,25 @@
             <div class="large-12 cell" id= "body">
               <img src="assets/img/engine2.png" id="Engine">
               <h4><b>Creating & Modifying a Video Game Engine</b></h4>
-			        <h5>One of my classes during my college career was Game Engine Design, where we were instructed in the ways of creating a Game Engine. During which, within the class time, we created a very basic engine in C and C++, which allowed for the User to jump infinitely, shoot balls indefinitely, have basic collision, and basic, mainly stationary AI. For the final Project of the class, I was instructed to modify the existing game engine.</h5>
-              <h5>I modified the engine by restricting the movement of the player (Only allowing for the player to jump once), Created new ways to shoot in the engine, Created a Weapons and Ammo System, locking away the new shooting options until the weapon was found in the world, locking it away again if the weapon ran out of ammo, and allowing the switching to said shooting types, as well as new basic AI for movement, and “Fake” walls. </h5>
-              <h5><a href="https://github.com/jpuptagrafft/CS-492-Game-Engine">Click here the view the project on Github!</a></h5>
+			        <h5>Within my Game Engine Design Class, we created a basic Game Engine in C and C++, which allowed for the User to jump infinitely, shoot balls indefinitely, have collision, and basic, mainly stationary AI.</h5>
+              <h5>For the Final of that class, I modified the system to be more in-line with what you would expect for a First Person Shooter: Only one jump, Multiple weapons, an Ammo system, more variety of AI, and some fake walls for secret areas.</h5>
+              <div id="buttonContainer"><a href="https://github.com/jpuptagrafft/CS-492-Game-Engine" class="button">Click here the view the project on Github!</a></div>
             </div>
             <div class="large-12 cell" id= "body">
               <img src="assets/img/motivateMe.jpg" id="Motivate">
               <h4><b>Motivation with Motivate Me! An App made with Ionic</b></h4>
-			        <h5>The Motivate Me! App, developed in Ionic, a development platform that used a combination of HTML, CSS, and Javascript, was made for my Senior Project, along with 3 of my fellow Computer Science students, and 1 Web Design student working out of Boise, all collaborating over GitHub. The Web Design Student gave us the Idea for the app within the first 2 weeks, and said he had prototypes of the app already, and would send them to us… Sadly, said Web Design student dropped the class a few weeks later without giving us much, if any, information, nor did he give us the prototypes… and so, after another week of us trying to figure out what to do and how to do it, as at the time I was one of the only students with previous Javascript Experience, I took up the visual design of the app, along with helping design the basis of what our motivation class structure would look like and getting push notifications working properly with both Android and IOS, while the others worked on how these structures would be stored, getting them to display properly, and general settings for the App itself.</h5>
-              <h5><a href="https://github.com/lcsc-capstone/motivationalApp">Click here the view the project on Github!</a></h5>
+			        <h5>The "Motivate Me!" App was a collaboration between 3 of my fellow Computer Science students, and was created using Ionic, A development Platform that used HTML, CSS, and Javascript.</h5>
+					<h5>Originally, we also would of had a Web Design student assist in the design, however, due to scheduling conflicts, I took over the design. I also acted as a leader in the early phases of the project, Helping my peers get their heads around Javascript, as well as designing the Motivation Class structure. After everyone was more comfortable and my guidance less necessary, I worked on Push Notification Integration.</h5>
+              <div id="buttonContainer"><a href="https://github.com/lcsc-capstone/motivationalApp" class="button">Click here the view the project on Github!</a></div>
             </div>
             <div class="large-12 cell" id= "lastBody">
               <img src="assets/img/Caster.png" id="Cast">
               <h4><b>Can you see what Eye see? Tracing Axons through the layers of a Mouse’s Retina</b></h4>
-			        <h5>During our Image Processing Class, we were instructed to assist in the research of one of our teachers, who was at the time studying different parts of the eyes of mice. With this in mind, we were given multiple different pictures in sequence, each representing a different slice of the eye, and each picture being about 9 MB in size. Originally, the teacher had to trace each cell by hand by flipping through layers, however, for certain cells, such as the Axon, the teacher theorized that this could be automated… and that’s where I step in.</h5>
-              <h5>The tracing process was done with code written in Processing3, which is an IDE, and the tracing code used modifications so it could use C++-esque code, which made it an excellent base to start from. Processing3 itself was very nice, as it meant that I didn’t have to load the entire picture below the previous picture; I just needed to load certain segments, which made it rather convenient. </h5>
-              <h5><a href="https://github.com/jpuptagrafft/BOIF-350-Axon-Tracing-Brush">Click here the view the project on Github!</a></h5>
+			        <h5>During our Image Processing Class, we were asked to create an extension of an existing app (Named CASTER) that could trace an Axon through the microscope slices of a Mouse Retnia.</h5>
+              <h5>The tracing process was done with code written in Processing3, which is an IDE, and the tracing code used modifications so it could use C++-esque code, which made it an excellent base to start from. Processing3's functionality itself was very nice, as it meant that I didn’t have to load the entire slice below the previous slice for the tracing process; I just needed to load certain, much smaller segments, which made it rather convenient, as each slice was around 9MB in size. </h5>
+              <div id="buttonContainer">
+				<a href="https://github.com/jpuptagrafft/BOIF-350-Axon-Tracing-Brush" class="button">Click here the view the project on Github!</a>
+			  </div>
             </div>
         </div>
       </section>
@@ -86,7 +89,7 @@
         <h6 id="foot"></h6>
         <script>
           var year = new Date();
-          document.getElementById("foot").innerHTML = "Created by James Uptagrafft, " + year.getFullYear();
+          document.getElementById("foot").innerHTML = "Created by James Uptagrafft, ©" + year.getFullYear();
         </script>
       </footer>
     <script src="js/vendor/jquery.js"></script>
