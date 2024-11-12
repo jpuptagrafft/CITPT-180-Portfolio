@@ -82,6 +82,13 @@ body{
 #lastIcon{
     padding-right: 2em;
 }
+#multiMenu{
+    display: flex;
+}
+#menuImg{
+    height: 100%;
+    padding-top: .3em;
+}
 @media screen and (min-width: 65em){
     #logoAndHam{
         width: 292px;
